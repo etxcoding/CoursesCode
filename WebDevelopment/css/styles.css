@@ -13,6 +13,11 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
 .container {
 	align-items: center;
 	display: flex;
@@ -24,7 +29,7 @@ a {
 }
 
 header {
-	background-color: #1d252d;
+    background-color: #1b2127;
 	display: flex;
 	height: 70px;
 }
@@ -54,5 +59,21 @@ header div nav ol li a {
 }
 
 .hero {
+    background-color: #1b2127;
     height: 300px;
+}
+
+.hero div h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+
+.hero div h1 strong {
+    color: #026fff;
+}
+
+.hero div img {
+    object-fit: cover;
 }
