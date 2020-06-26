@@ -4,6 +4,15 @@ body {
 	margin: 0;
 }
 
+figure {
+	margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .container {
 	align-items: center;
 	display: flex;
@@ -20,10 +29,6 @@ header {
 	height: 70px;
 }
 
-header div figure {
-	margin: 0;
-}
-
 header div nav {
 	align-items: center;
 	display: flex;
@@ -31,11 +36,23 @@ header div nav {
 }
 
 header div nav ol {
-	display: flex;
+    display: flex;
+    height: inherit;
+    margin: 0;
 }
 header div nav ol li {
 	color: white;
 	font-size: 1rem;
+    height: inherit;
 	list-style: none;
-	margin: 0 10px;
+}
+header div nav ol li a {
+	align-items: center;
+	display: flex;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.hero {
+    height: 300px;
 }
