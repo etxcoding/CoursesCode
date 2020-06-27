@@ -151,15 +151,15 @@ header div nav ol li a {
 }
 
 .experience {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .event {
 	background-color: #f4fbff;
 	border-radius: 10px;
-    height: 450px;
-    margin: 10px;
+	height: 450px;
+	margin: 10px;
 	overflow: hidden;
 	width: 492px;
 }
@@ -195,7 +195,8 @@ header div nav ol li a {
 	position: relative;
 }
 
-.video-container iframe, .video container img {
+.video-container iframe,
+.video container img {
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -205,3 +206,77 @@ header div nav ol li a {
 	width: 100%;
 }
 /* EXPERIENCE ENDS */
+
+/* CONTACT STARTS */
+.contact {
+	align-items: center;
+	background-color: #056fff;
+	color: white;
+	display: flex;
+	height: 150px;
+	justify-content: space-between;
+}
+
+.contact-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: inherit;
+}
+
+.contact-email h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.contact-email div input {
+    background-image: url(../images/envelope.svg);
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+}
+.contact-email div button {
+	background-color: #056fff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100px;
+}
+
+.contact-social {
+    display: flex;
+}
+
+.contact-social a {
+    background-size: 50px 50px;
+    height: 50px;
+    margin: 0 10px;
+    width: 50px;
+}
+
+.contact-social a.twitter {
+    background-image: url(../images/twitter.svg);
+}
+.contact-social a.facebook {
+    background-image: url(../images/facebook.svg);
+}
+.contact-social a.github {
+    background-image: url(../images/github.svg);
+}
+.contact-social a.instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+/* CONTACT ENDS */
+
+/* FOOTER STARTS */
+footer {
+	background-color: #1b2127;
+	display: flex;
+	height: 70px;
+	justify-content: space-between;
+}
+/* FOOTER ENDS */
