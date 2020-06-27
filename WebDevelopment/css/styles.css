@@ -274,9 +274,16 @@ header div nav ol li a {
 
 /* FOOTER STARTS */
 footer {
-	background-color: #1b2127;
+    background-color: #1b2127;
+    color: white;
 	display: flex;
 	height: 70px;
 	justify-content: space-between;
+}
+footer img {
+    vertical-align: middle;
+}
+footer a {
+    text-decoration: underline;
 }
 /* FOOTER ENDS */
