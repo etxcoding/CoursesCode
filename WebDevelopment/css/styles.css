@@ -1,3 +1,4 @@
+/* GENERAL ELEMENTS STARTS */
 html,
 body {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -31,17 +32,22 @@ h2 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+/* GENERAL ELEMENTS ENDS */
 
+/* GENERAL CLASSES STARTS */
 .container {
 	align-items: center;
 	display: inherit;
 	flex: 1;
+	flex-wrap: inherit;
 	height: inherit;
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1024px;
 }
+/* GENERAL CLASSES ENDS */
 
+/* HEADER STARTS */
 header {
 	background-color: #1b2127;
 	display: flex;
@@ -71,7 +77,9 @@ header div nav ol li a {
 	height: inherit;
 	padding: 0 10px;
 }
+/* HEADER ENDS */
 
+/* HERO STARTS */
 .hero {
 	background-color: #1b2127;
 	display: flex;
@@ -92,7 +100,9 @@ header div nav ol li a {
 .hero div img {
 	object-fit: cover;
 }
+/* HERO ENDS */
 
+/* PORTFOLIO STARTS */
 .portfolio {
 	display: block;
 	padding-top: 20px;
@@ -106,7 +116,7 @@ header div nav ol li a {
 	border: 1px solid black;
 	border-radius: 10px;
 	display: flex;
-    margin-bottom: 15px;
+	margin-bottom: 20px;
 	padding: 20px;
 }
 
@@ -127,9 +137,71 @@ header div nav ol li a {
 }
 
 .project-data strong {
-    font-family: 'Fjalla One', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .project-data-description {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
+/* PORTFOLIO ENDS */
+
+/* EXPERIENCE STARTS */
+#experience div h2 {
+	margin: 40px 0;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event {
+	background-color: #f4fbff;
+	border-radius: 10px;
+    height: 450px;
+    margin: 10px;
+	overflow: hidden;
+	width: 492px;
+}
+
+.event-details {
+	background-color: white;
+	margin: 20px 40px;
+	margin-top: -40px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.event-details p {
+	text-align: justify;
+}
+
+.event-details a {
+	border: 1px solid #056fff;
+	border-radius: 10px;
+	color: #056fff;
+	padding: 5px 20px;
+}
+
+.event-details a:hover {
+	background-color: #056fff;
+	color: white;
+}
+
+.video-container {
+	height: 0;
+	padding-bottom: 270px;
+	position: relative;
+}
+
+.video-container iframe, .video container img {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+/* EXPERIENCE ENDS */
