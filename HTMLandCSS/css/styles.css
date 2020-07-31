@@ -43,7 +43,7 @@ nav li a:hover {
 	background-position: center top;
 	background-size: cover;
 	display: flex;
-	height: 50px;
+	max-height: 50px;
 	justify-content: center;
 	padding: 20%;
 }
@@ -61,4 +61,20 @@ nav li a:hover {
 
 .img_content {
 	text-align: center;
+}
+
+.main_button {
+    background-color: #7acc2d;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;;
+    padding: 10px;
+    width: 100%;
+}
+
+.main_button:hover {
+    background-color: #5E9E22;
+    
 }
