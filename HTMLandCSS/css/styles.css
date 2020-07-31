@@ -1,0 +1,64 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: Helvetica, sans-serif;
+}
+
+nav {
+	align-items: center;
+	background-color: #7acc2d;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	padding-left: 20px;
+	list-style: none;
+}
+
+nav li a {
+	color: gray;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: white;
+}
+
+.main_section {
+	padding: 15%;
+	text-align: center;
+}
+
+.products {
+	background-image: url('../img/curve.png');
+	background-position: center top;
+	background-size: cover;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	padding: 20%;
+}
+
+.product {
+	padding: 10px;
+	margin-top: -240px;
+}
+
+.product .content {
+	background-color: white;
+	box-shadow: 0 0 1px #c1bcbc;
+	padding: 15px;
+}
+
+.img_content {
+	text-align: center;
+}
