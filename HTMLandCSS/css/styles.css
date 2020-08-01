@@ -1,18 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* -------------- VARIABLES */
+:root {
+	/* COLORS */
+	--black-color: #313337;
+	--white-color: white;
+	--gray-color: gray;
+	--green-color: #7acc2d;
+	--greendark-color: #5e9e22;
+
+	/* SPACING */
+	--space: 10px;
+
+	/* FONTS */
+    --normal: 12px;
+    
+    /* BOX SHADOW */
+    --box: 0px 0 2px 1px #E6E5E9;
+}
+
+/* -------------- VARIABLES */
+
 html,
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 12px;
-	font-family: Helvetica, sans-serif;
+	font-size: var(--normal);
+	font-family: 'Open Sans', sans-serif;
 }
 
 nav {
 	align-items: center;
-	background-color: #7acc2d;
-	color: white;
+	background-color: var(--green-color);
+	color: var(--white-color);
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: var(--space);
 }
 
 nav ul {
@@ -25,12 +47,12 @@ nav li {
 }
 
 nav li a {
-	color: gray;
+	color: var(--black-color);
 	text-decoration: none;
 }
 
 nav li a:hover {
-	color: white;
+	color: var(--white-color);
 }
 
 .main_section {
@@ -49,13 +71,13 @@ nav li a:hover {
 }
 
 .product {
-	padding: 10px;
+	padding: var(--space);
 	margin-top: -240px;
 }
 
 .product .content {
-	background-color: white;
-	box-shadow: 0 0 1px #c1bcbc;
+	background-color: var(--white-color);
+	box-shadow: var(--box);
 	padding: 15px;
 }
 
@@ -64,17 +86,16 @@ nav li a:hover {
 }
 
 .main_button {
-    background-color: #7acc2d;
-    border: 0;
-    border-radius: 2px;
-    color: white;
-    cursor: pointer;
-    font-size: 12px;;
-    padding: 10px;
-    width: 100%;
+	background-color: var(--green-color);
+	border: 0;
+	border-radius: 2px;
+	color: var(--white-color);
+	cursor: pointer;
+	font-size: var(--normal);
+	padding: var(--space);
+	width: 100%;
 }
 
 .main_button:hover {
-    background-color: #5E9E22;
-    
+	background-color: var(--greendark-color);
 }
