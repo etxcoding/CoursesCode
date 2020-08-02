@@ -12,10 +12,10 @@
 	--space: 10px;
 
 	/* FONTS */
-    --normal: 12px;
-    
-    /* BOX SHADOW */
-    --box: 0px 0 2px 1px #E6E5E9;
+	--normal: 12px;
+
+	/* BOX SHADOW */
+	--box: 0px 0 2px 1px #e6e5e9;
 }
 
 /* -------------- VARIABLES */
@@ -37,54 +37,60 @@ nav {
 	padding: var(--space);
 }
 
+/* -------------- NAVIGATION */
 nav ul {
 	display: flex;
 }
-
 nav li {
 	padding-left: 20px;
 	list-style: none;
 }
-
 nav li a {
 	color: var(--black-color);
 	text-decoration: none;
 }
-
 nav li a:hover {
 	color: var(--white-color);
 }
+/* -------------- NAVIGATION */
 
+/* -------------- MAIN SECTION */
 .main_section {
-	padding: 15%;
-	text-align: center;
+	display: flex;
+	font-size: 14px;
+	justify-content: center;
+	padding: 5% 10%;
 }
 
+.main_section div {
+	max-width: 615px;
+	text-align: center;
+}
+/* -------------- MAIN SECTION */
+
+/* -------------- PRODUCTS */
 .products {
 	background-image: url('../img/curve.png');
 	background-position: center top;
 	background-size: cover;
 	display: flex;
-	max-height: 50px;
+	/* max-height: 50px; */
 	justify-content: center;
-	padding: 20%;
+	padding: 5%;
 }
-
 .product {
 	padding: var(--space);
-	margin-top: -240px;
+	margin-top: -10%;
+	max-width: 239px;
 }
-
 .product .content {
 	background-color: var(--white-color);
 	box-shadow: var(--box);
 	padding: 15px;
 }
-
 .img_content {
 	text-align: center;
 }
-
 .main_button {
 	background-color: var(--green-color);
 	border: 0;
@@ -95,7 +101,48 @@ nav li a:hover {
 	padding: var(--space);
 	width: 100%;
 }
-
 .main_button:hover {
 	background-color: var(--greendark-color);
+}
+/* -------------- PRODUCTS */
+
+/* -------------- BENEFITS */
+
+.benefits {
+	display: flex;
+	font-size: 14px;
+	justify-content: space-around;
+	padding: 5% 10%;
+}
+.benefit {
+	max-width: 180px;
+}
+.benefit .img_content img {
+	max-width: 100%;
+	max-height: 100px;
+}
+/* -------------- BENEFITS */
+
+.mentions_section {
+	font-size: 14px;
+	padding: 5% 10%;
+}
+
+.mentions_section .section_header {
+	text-align: center;
+	width: 100%;
+}
+
+.mentions_section .mentions {
+	display: flex;
+	width: 100%;
+}
+
+.mention {
+	box-shadow: var(--box);
+	max-width: 230px;
+}
+.mention .img_content img {
+	max-width: 100%;
+	
 }
