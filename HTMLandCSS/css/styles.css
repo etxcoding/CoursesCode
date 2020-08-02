@@ -157,3 +157,17 @@ nav li a:hover {
 .mention .content p {
 	margin: 5px 0;
 }
+
+footer {
+    align-items: center;
+    background-color: #313337;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: var(--space);
+}
+
+footer a {
+    color: var(--white-color);
+    text-decoration: none;
+}
