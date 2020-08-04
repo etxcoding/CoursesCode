@@ -191,3 +191,7 @@ footer a {
     color: var(--white-color);
     text-decoration: none;
 }
+
+.product_img {
+	max-width: 100%;
+}
