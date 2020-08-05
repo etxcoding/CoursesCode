@@ -198,8 +198,11 @@ footer {
 }
 
 footer a {
-	color: var(--white-color);
 	text-decoration: none;
+}
+
+.contact {
+	color: var(--green-color);
 }
 
 /* -------------- END FOOTER */
