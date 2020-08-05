@@ -226,9 +226,10 @@ footer a {
 	max-width: 150px;
 }
 
-.payment_module input {
+.data {
 	border: 1px solid;
 	border-radius: 2px;
+	box-sizing: border-box;
 	display: block;
 	height: 35px;
 	margin-top: var(--space);
