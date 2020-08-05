@@ -144,6 +144,7 @@ nav li a:hover {
 }
 /* -------------- END BENEFITS */
 
+/* -------------- START MENTIONS */
 .mentions_section {
 	padding: 5% 10%;
 }
@@ -175,8 +176,11 @@ nav li a:hover {
 	font-size: 16px;
 	font-weight: bold;
 }
-.mention .content p {
-}
+
+/* -------------- END MENTIONS */
+
+
+/* -------------- START FOOTER */
 
 footer {
     align-items: center;
@@ -192,6 +196,29 @@ footer a {
     text-decoration: none;
 }
 
+/* -------------- END FOOTER */
+
+
+/* -------------- START PRODUCTS.HTML */
+
 .product_img {
 	max-width: 100%;
 }
+
+/* -------------- END PRODUCTS.HTML */
+
+
+/* -------------- START PAYMENT MODULE */
+
+.payment_module {
+	background-color: var(--white-color);
+	box-shadow: var(--box);
+	padding: var(--space);
+}
+
+.payment_module_img {
+	margin: auto;
+	max-width: 150px;
+}
+
+/* -------------- END PAYMENT MODULE */
