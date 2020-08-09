@@ -34,6 +34,7 @@ a:hover {
 }
 
 /* ------------------- HEADER */
+
 header {
     height: 60px;
     width: 100%;
@@ -167,3 +168,42 @@ main .main-buttons button:hover {
 }
 
 /* ------------------- MAIN */
+
+
+/* ------------------- FOOTER */
+
+footer {
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0;
+    display: grid;
+    font-size: var(--font-small);
+    height: 50px;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;;
+    list-style: none;
+    margin: 10px;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    color: #5F6368;
+    margin: 10px;
+}
+
+/* ------------------- FOOTER */
+
