@@ -1,0 +1,40 @@
+/* ------------------- VARIABLES */
+:root {
+    --space: 10px;
+    --space-1-5-x: 15px;
+    --space-2-x: 20px;
+    --space-3-x: 30px;
+    --space-4-x: 40px;
+
+    --black-color: #000;
+    --gray-color: #DFE1E5;
+    --gray-dark-color: #5f6368;
+
+    --font-extra-small: 12px;
+    --font-small: 13px;
+    --font-middle: 14px;
+    --font-large: 16px;
+    --font-extra-large: 18px;
+}
+/* ------------------- VARIABLES */
+
+/* ------------------- GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-extra-small);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* ------------------- GENERAL */
+
+/* ------------------- GENERAL */
+
+/* ------------------- GENERAL */
