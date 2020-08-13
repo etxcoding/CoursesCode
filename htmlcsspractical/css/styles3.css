@@ -162,19 +162,29 @@ main .main-search {
 }
 
 main .main-search .main-search-input {
-    border: 1px solid black;
+    align-items: center;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px 0 0 2px;
+    display: flex;
     height: 44px;
+    justify-content: center;
     width: 394px;
 }
 
 main .main-search .main-search-input input {
     border: none;
+    font-size: 14px;
+    height: 95%;
     width: 95%;
+}
+main .main-search .main-search-input input:focus {
+    outline: none;
 }
 
 main .main-search .main-search-logo {
     background-color: #447ff5;
     border: 1px solid #447ff5;
+    border-radius: 0 2px 2px 0;
     height: 44px;
     text-indent: -9999px;
     width: 56px;
