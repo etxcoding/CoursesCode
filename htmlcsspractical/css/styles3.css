@@ -218,8 +218,10 @@ main .main-search .main-search-logo div {
 
 /* ------------------- MAIN LANGUAGE */
 .main-wiki-lang {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin: 30px auto;
-    text-align: center;
     width: 100%;
 }
 
@@ -253,6 +255,11 @@ main .main-search .main-search-logo div {
     height: 16px;
     margin-left: 7px;
     width: 16px;
+}
+
+.main-wiki-lang-line {
+    padding: 0 10px;
+    width: 75px;
 }
 /* ------------------- MAIN LANGUAGE */
 
