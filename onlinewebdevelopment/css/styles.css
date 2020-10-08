@@ -1,0 +1,289 @@
+/* GENERAL ELEMENTS STARTS */
+html,
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	color: #026fff;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/* GENERAL ELEMENTS ENDS */
+
+/* GENERAL CLASSES STARTS */
+.container {
+	align-items: center;
+	display: inherit;
+	flex: 1;
+	flex-wrap: inherit;
+	height: inherit;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+/* GENERAL CLASSES ENDS */
+
+/* HEADER STARTS */
+header {
+	background-color: #1b2127;
+	display: flex;
+	height: 70px;
+}
+
+header div nav {
+	align-items: center;
+	display: flex;
+	height: inherit;
+}
+
+header div nav ol {
+	display: flex;
+	height: inherit;
+	margin: 0;
+}
+header div nav ol li {
+	color: white;
+	font-size: 1rem;
+	height: inherit;
+	list-style: none;
+}
+header div nav ol li a {
+	align-items: center;
+	display: flex;
+	height: inherit;
+	padding: 0 10px;
+}
+/* HEADER ENDS */
+
+/* HERO STARTS */
+.hero {
+	background-color: #1b2127;
+	display: flex;
+	height: 300px;
+}
+
+.hero div h1 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 3.5rem;
+}
+
+.hero div h1 strong {
+	color: #026fff;
+}
+
+.hero div img {
+	object-fit: cover;
+}
+/* HERO ENDS */
+
+/* PORTFOLIO STARTS */
+.portfolio {
+	display: block;
+	padding-top: 20px;
+}
+
+.portfolio div h2 {
+	margin-bottom: 40px;
+}
+
+.portfolio article {
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.project {
+	align-items: center;
+	display: flex;
+}
+
+.project-data h3 {
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.project-data h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.project-data strong {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.project-data-description {
+	font-size: 1.3rem;
+}
+/* PORTFOLIO ENDS */
+
+/* EXPERIENCE STARTS */
+#experience div h2 {
+	margin: 40px 0;
+}
+
+.experience {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.event {
+	background-color: #f4fbff;
+	border-radius: 10px;
+	height: 450px;
+	margin: 10px;
+	overflow: hidden;
+	width: 492px;
+}
+
+.event-details {
+	background-color: white;
+	margin: 20px 40px;
+	margin-top: -40px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.event-details p {
+	text-align: justify;
+}
+
+.event-details a {
+	border: 1px solid #056fff;
+	border-radius: 10px;
+	color: #056fff;
+	padding: 5px 20px;
+}
+
+.event-details a:hover {
+	background-color: #056fff;
+	color: white;
+}
+
+.video-container {
+	height: 0;
+	padding-bottom: 270px;
+	position: relative;
+}
+
+.video-container iframe,
+.video container img {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+/* EXPERIENCE ENDS */
+
+/* CONTACT STARTS */
+.contact {
+	align-items: center;
+	background-color: #056fff;
+	color: white;
+	display: flex;
+	height: 150px;
+	justify-content: space-between;
+}
+
+.contact-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: inherit;
+}
+
+.contact-email h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.contact-email div input {
+    background-image: url(../images/envelope.svg);
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+}
+.contact-email div button {
+	background-color: #056fff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100px;
+}
+
+.contact-social {
+    display: flex;
+}
+
+.contact-social a {
+    background-size: 50px 50px;
+    height: 50px;
+    margin: 0 10px;
+    width: 50px;
+}
+
+.contact-social a.twitter {
+    background-image: url(../images/twitter.svg);
+}
+.contact-social a.facebook {
+    background-image: url(../images/facebook.svg);
+}
+.contact-social a.github {
+    background-image: url(../images/github.svg);
+}
+.contact-social a.instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+/* CONTACT ENDS */
+
+/* FOOTER STARTS */
+footer {
+    background-color: #1b2127;
+    color: white;
+	display: flex;
+	height: 70px;
+	justify-content: space-between;
+}
+footer img {
+    vertical-align: middle;
+}
+footer a {
+    text-decoration: underline;
+}
+/* FOOTER ENDS */
