@@ -1,0 +1,7 @@
+ecmascript es la especificacion de lenguaje propuesto por ecma int
+javascript usa esta especificacion a partir de 2015 (ecmascript 6)
+
+javascript lo creó netscape en 1996
+a partir de ahí se han ido agregando nuevas versiones
+en 2011 se hace una revision
+y en 2015 se crea la especificacion que deja agregar nuevas caracteristicas año con año

@@ -1,3 +1,5 @@
+//2017
+
 import hello from '../es6/module';
 
 // ENTRIES
@@ -16,7 +18,7 @@ console.log(entries.length);
 const data = {
 	frontend: 'Paulina',
 	backend: 'Jesus',
-	design: 'Ana'
+	design: 'Ana', // <----
 };
 
 const values = Object.values(data);
@@ -39,7 +41,7 @@ const obj = {
 
 const helloWorld = () => {
 	return new Promise((resolve, reject) => {
-		if (false) {
+		if (true) {
 			setTimeout(() => resolve('Hello World'), 3000);
 		} else {
 			reject(new Error('Test error'));
