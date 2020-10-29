@@ -25,6 +25,38 @@ valores */
 /* background gris = #1b2127 */
 /* celeste = #026fff */
 
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot?ki6rmc");
+	src: url("../fonts/icomoon.eot?ki6rmc#iefix") format("embedded-opentype"),
+		url("../fonts/icomoon.ttf?ki6rmc") format("truetype"),
+		url("../fonts/icomoon.woff?ki6rmc") format("woff"),
+		url("../fonts/icomoon.svg?ki6rmc#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e900";
+}
+
 /* GENERAL STARTS */
 body {
 	font-family: "Source Sans Pro", sans-serif;
@@ -102,6 +134,11 @@ h2 {
 	height: 70px;
 	align-items: center;
 	justify-content: space-between;
+	/* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5; */
 }
 
 ol,
@@ -341,6 +378,42 @@ figure {
 }
 /* FOOTER ENDS */
 
+.youtube-video {
+	/* width: 100%;
+  height: auto; */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.flexible-video {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	background: blue;
+	position: relative;
+}
+
+.burger-button {
+	background-color: #1b2127;
+	border-radius: 50%;
+	color: #fff;
+	display: none;
+
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+
+	width: 40px;
+	z-index: 4;
+}
+
 /* MEDIA QUERIES STARTS */
 @media screen and (max-width: 1024px) {
 	.container {
@@ -348,10 +421,10 @@ figure {
 	}
 
 	.hero {
-    height: auto;
-    padding: 2em;
-    position: relative;
-    overflow: hidden;
+		height: auto;
+		padding: 2em;
+		position: relative;
+		overflow: hidden;
 	}
 	.hero-image {
 		position: absolute;
@@ -359,8 +432,8 @@ figure {
 		left: 0;
 		right: 0;
 		top: 0;
-    bottom: 0;
-    width: 100%;
+		bottom: 0;
+		width: 100%;
 	}
 	h1 {
 		font-size: 2em;
@@ -369,13 +442,38 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+
+	.burger-button {
+		display: block;
+	}
+
 	.header {
 		display: block;
 		height: auto;
 	}
 	.header .logo {
 		text-align: center;
-	}
+  }
+  
+  .menu {
+    position: fixed;
+    background: rgba(5, 111, 255, .9);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .3s;
+  }
+
+  .menu.is-active {
+    left: 0;
+  }
 	.header ol {
 		display: block;
 	}
@@ -383,7 +481,11 @@ figure {
 		height: 50px;
 	}
 	.header ol li a {
-		justify-content: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
 	}
 
 	.project {
@@ -434,10 +536,9 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
-
-  h1 {
-    font-size: 1.5em;
-  }
+	h1 {
+		font-size: 1.5em;
+	}
 
 	.project-details {
 		font-size: 12px;
@@ -465,15 +566,14 @@ figure {
 }
 
 @media screen and (max-width: 320px) {
-  
-  h1 {
-    background: rgba(0,0,0, .5);
-    font-size: 1.2em;
-  }
+	h1 {
+		background: rgba(0, 0, 0, 0.5);
+		font-size: 1.2em;
+	}
 
-  .hero {
-    padding: 2em 1em;
-  }
+	.hero {
+		padding: 2em 1em;
+	}
 
 	.project-details {
 		font-size: 10px;
