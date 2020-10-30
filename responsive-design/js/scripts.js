@@ -21,6 +21,7 @@ function validation(event) {
 		});
 	}
 }
+validation(ipad);
 
 function hideShow() {
 	menu.classList.toggle("is-active");
