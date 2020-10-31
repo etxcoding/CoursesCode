@@ -1,0 +1,107 @@
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+.hero {
+	background: #23475b;
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+	padding: 32px 15px;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 70px 1fr 320px;
+    grid-template-areas: "badge title form" ". description form" ". countdown form";
+    grid-gap: 10px;
+}
+.badge {
+    grid-area: badge;
+}
+.badge img {
+    max-width: 70px;
+}
+.title {
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0;
+	display: flex;
+    align-items: center;
+
+    grid-area: title;
+}
+.description {
+    
+    grid-area: description;
+}
+.form {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1.5em;
+	text-align: center;
+    
+    grid-area: form;
+}
+.form input {
+    border: 1px solid #dbdbe2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.form p {
+    color: #3a3b3f;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+.form button {
+    background: #98ca3f;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 5px solid #6d932b;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background: #6d932b;
+}
+.countdown {
+    
+    grid-area: countdown;
+}
+.countdown p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.countdown span {
+    font-size: 33px;
+}
+.countdown span:after {
+    content: ':';
+    display: inline-block;
+    margin: 0 5px;
+}
+.countdown span:last-child:after {
+    display: none;
+}
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hero-container {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "badge title" "description description" "form form" "countdown countdown";
+        grid-gap: 10px;
+    }
+}
