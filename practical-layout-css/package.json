@@ -1,0 +1,18 @@
+{
+  "name": "practical-layout-css",
+  "version": "1.0.0",
+  "description": "the project from a course in platzi",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesus Rios",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
