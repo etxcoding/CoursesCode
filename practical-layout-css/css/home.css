@@ -121,19 +121,15 @@ main section .home-main-text {
     text-align: center;
 }
 main section .home-main-button {
-    
 	background-color: var(--primary-color);
-	border-color: var(--primary-color);
-    height: 50px;
-    width: 110px;
-
-    display: grid;
-    align-items: center;
-
-}
-main section .home-main-button a {
+    border-color: var(--primary-color);
     font-size: 1.2em;
     font-weight: 700;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    padding: 0px 10px;
+
 }
 
 @media (max-width: 1024px) {
