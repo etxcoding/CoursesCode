@@ -21,7 +21,6 @@ const list = async (filter) => {
 };
 
 const add = (item) => {
-	console.log(item);
 	const newItem = new Model(item);
 	newItem.save();
 };

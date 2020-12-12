@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 			response.success(req, res, results, 201);
 		})
 		.catch((error) => {
-			response.error(req, res, error, 500, 'This is only a simulation.');
+			response.error(req, res, 'Internal error.', 500, error);
 		});
 });
 
@@ -29,7 +29,7 @@ router.get('/:userId', (req, res) => {
 			response.success(req, res, results, 201);
 		})
 		.catch((error) => {
-			response.error(req, res, error, 500, 'This is only a simulation.');
+			response.error(req, res, 'Internal error.', 500, error);
 		});
 });
 
@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
 			response.success(req, res, `Item added.`, 201);
 		})
 		.catch((error) => {
-			response.error(req, res, error, 500, 'This is only a simulation.');
+			response.error(req, res, 'Internal error.', 500, error);
 		});
 });
 

@@ -3,11 +3,12 @@ const multer = require('multer');
 const router = express.Router();
 const response = require('../../network/response');
 const controller = require('./controller');
+const config = require('../../config');
 
 const upload = multer({
 	storage: multer.diskStorage({
 		destination: (req, file, cb) => {
-			cb(null, 'public/files/');
+			cb(null, `public/${config.filesRoute}/`);
 		},
 		filename: (req, file, cb) => {
 			cb(null, new Date().toISOString() + file.originalname);
@@ -16,6 +17,7 @@ const upload = multer({
 });
 
 router.get('/', (req, res) => {
+	console.log(req.headers['accept']);
 	// res.header({
 	// 	'custom-header': 'custom value'
 	// });
@@ -31,14 +33,13 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', upload.single('file'), (req, res) => {
-	console.log(req.file);
 	controller
 		.add(req.body.chat, req.body.user, req.body.message, req.file)
 		.then((results) => {
 			response.success(req, res, `Item ${results.message} added.`, 201);
 		})
 		.catch((error) => {
-			response.error(req, res, error, 500, 'This is only a simulation.');
+			response.error(req, res, error, 500, error);
 		});
 });
 

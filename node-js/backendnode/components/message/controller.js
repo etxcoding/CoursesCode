@@ -1,4 +1,6 @@
 const store = require('./store');
+const { socket } = require('../../socket');
+const config = require('../../config');
 
 const list = (chat, user) => {
 	let filter = {};
@@ -11,6 +13,7 @@ const list = (chat, user) => {
 };
 
 const add = (chat, user, message, file) => {
+	// console.log(chat);
 	return new Promise((resolve, reject) => {
 		if (!chat || !user || !message) {
 			console.error('[messageController] No chat, user or message.');
@@ -20,7 +23,7 @@ const add = (chat, user, message, file) => {
 
 		let fileUrl = '';
 		if (file) {
-			fileUrl = `http://localhost:3000/app/files/${file.filename}`;
+			fileUrl = `${config.host}:${config.port}${config.publicRoute}/${config.filesRoute}/${file.filename}`;
 		}
 
 		const item = {
@@ -31,6 +34,9 @@ const add = (chat, user, message, file) => {
 			file: fileUrl
 		};
 		store.add(item);
+
+		socket.io.emit('message', item);
+
 		resolve(item);
 	});
 };
