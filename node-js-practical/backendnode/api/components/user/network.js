@@ -1,41 +1,40 @@
 const express = require('express');
+const secure = require('./secure');
 const response = require('../../../network/response');
 const controller = require('./index');
 const router = express.Router();
 
-const list = async (req, res) => {
-
+const list = async (req, res, next) => {
 	try {
+		throw new Error('test');
 		const data = await controller.list();
 		response.success(req, res, data, 200);
 	} catch (error) {
-		response.error(req, res, '', 500, `[userNetwork] ${error}`);
+		next(error);
 	}
-}
+};
 
-const get = async (req, res) => {
-
+const get = async (req, res, next) => {
 	try {
 		const data = await controller.get(req.params.id);
 		response.success(req, res, data, 200);
 	} catch (error) {
-		response.error(req, res, '', 500, `[userNetwork] ${error}`);
+		next(error);
 	}
-}
+};
 
-const upsert = async (req, res) => {
-
+const upsert = async (req, res, next) => {
 	try {
 		const data = await controller.upsert(req.body);
 		response.success(req, res, data, 201);
 	} catch (error) {
-		response.error(req, res, '', 500, `[userNetwork] ${error}`);
+		next(error);
 	}
-}
+};
 
 router.get('/', list);
 router.get('/:id', get);
 router.post('/', upsert);
-router.put('/', upsert);
+router.put('/', secure('update'), upsert);
 
 module.exports = router;

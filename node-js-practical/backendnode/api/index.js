@@ -1,19 +1,13 @@
 const config = require('../config');
 
-const swaggerUi = require('swagger-ui-express');
-
 const express = require('express');
-const bodyParser = require('body-parser');
-
 const app = express();
+
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-const user = require('./components/user/network');
-
-const swaggerDoc = require('./swagger.json');
-// Routes
-app.use('/api/user', user);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+const router = require('../network/routes');
+router(app);
 
 app.listen(config.api.port, () => {
 	console.log(`Listening on: ${config.api.host}:${config.api.port}`);
